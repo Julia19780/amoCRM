@@ -1,5 +1,6 @@
 const accessToken = 'ВАШ_ACCESS_TOKEN'; // Замените на свой токен
-const subdomain = 'Ш_SUBDOMAIN'; // Замените на свой поддомен amoCRM
+const subdomain =
+  'https://github.com/Julia19780/amoCRM/blob/6575abd35ba1949a1da402d8cffb064374b7a439/amo/amo.js'; // Замените на свой поддомен amoCRM
 
 async function fetchDeals() {
   try {
