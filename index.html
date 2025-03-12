@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    
+    <title>Сделки amoCRM</title>
+    <style>
+      .spinner {
+        display: none;
+        width: 20px;
+        height: 20px;
+        border: 3px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 3px solid #3498db;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .status-circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Сделки amoCRM</h1>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>ID Сделки</th>
+            <th>Название Сделки</th>
+            <th>Бюджет</th>
+            <th>Контакт</th>
+            <th>Телефон</th>
+          </tr>
+        </thead>
+        <tbody id="dealsTableBody">
+          <!-- Данные будут вставлены сюда -->
+        </tbody>
+      </table>
+    </div>
+
+    <script 
+    
+    src="script.js"></script>
+  </body>
+</html>
