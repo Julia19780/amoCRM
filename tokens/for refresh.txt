@@ -1,0 +1,14 @@
+fetch('https://mssemakova99.amocrm.ru/oauth2/access_token', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    client_id: 'aa89293f-afc3-4e36-b19a-938335439760',
+    client_secret: '5t3gDOFMxCtQwAGkTzyjJm6AyVHyG5LECs6eIRtFY7mK3AvonD4FtKynYMsQt7v9',
+    grant_type: 'refresh_token',                                                       			    refresh_token: "def502000a0206aacf75baef797f78eba023e426b06b23817ec30ef02e0645d0e78dd57d58c25b41df4b747813d362147a1e6d6a295d673088f6fa424b90fe384eb14e59cf1f30056b493a83ee5ccb68131c2bd4da2e91fb29b40e4f35663924fefed8cba6dc1261dce006663252660bafb4e1273f4d95520efec14d5ad6443d99422259068eb1eb32299fc47d131d8aa86d655227619b65bb25cf1bbb27d2b327f32cfa7a49756eb76319951098588f11b703a223eae32cf04da9f5d5cbbecae9221f99fa7a357b1766f7b23fd2954cabb84fdfe34473076c5094ea3a2113de837967c3de4e15caada0b26d1c9ed2c77d27e0b3d2fb2e4f0d8a35a791f1a4f746ff6e01f6a2ebef89927bc0de00e4065866e3cdd029cbf3912ac642fe9174a52381a5ee88b3df5c56a6f6bcccad85cd7caf601170e2046fce1b671cf1d628c2adea4e2934faed900e4e0ad8a45cd82da5207fe57f4f2a7c4ab967424e928eb1c36a7f6167cebe3f4689cc7f3c4eaeaea3c48a2ff0bf35394abb01824b9d0c0702164e6679fa330c24e751b4def266c9c9a2d77fe8358efcf27550cdb2ba364c91b009ad475fc56c5c2276a5b1fe9e62221360fd6439e2f3c9bca25a1951a3d309edc296c7ea34d3caba14394b69cab9b79ab3072ca28154cb5bcc2c6334833e23dd0f3bd2b0aa3873af9ab92ded",
+    redirect_uri: 'https://github.com/Julia19780/amoCRM/blob/6575abd35ba1949a1da402d8cffb064374b7a439/amo/amo.js'
+  })
+})
+.then(response => response.json())
+.then(data => console.log(data));
